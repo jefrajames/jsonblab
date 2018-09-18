@@ -10,6 +10,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <jsonb.version>1.0</jsonb.version>
+        <jsonp.version>1.1</jsonp.version>
         <junit.version>4.12</junit.version>
     </properties>
     
@@ -19,7 +21,7 @@
         <dependency>
             <groupId>javax.json.bind</groupId>
             <artifactId>javax.json.bind-api</artifactId>
-            <version>1.0.0-M2</version>
+            <version>${jsonb.version}</version>
         </dependency>
                     
         
@@ -27,7 +29,7 @@
         <dependency>
             <groupId>org.eclipse</groupId>
             <artifactId>yasson</artifactId>
-            <version>1.0.0-M2</version>
+            <version>${jsonb.version}</version>
             <scope>test</scope>
         </dependency>
         
@@ -35,7 +37,7 @@
         <dependency>
             <groupId>org.glassfish</groupId>
             <artifactId>javax.json</artifactId>
-            <version>1.1.0-M2</version>
+            <version>${jsonp.version}</version>
             <scope>test</scope>
         </dependency>
         
@@ -62,7 +64,7 @@
             <name>Yasson Snapshots repository</name>
             <url>https://repo.eclipse.org/content/repositories/yasson-snapshots</url>
             <snapshots>
-                <enabled>true</enabled>
+                <enabled>false</enabled>
             </snapshots>
         </repository>
         
@@ -71,7 +73,7 @@
             <name>Yasson Snapshots repository</name>
             <url>https://repo.eclipse.org/content/repositories/yasson-releases</url>
             <snapshots>
-                <enabled>false</enabled>
+                <enabled>true</enabled>
             </snapshots>
         </repository>
         
